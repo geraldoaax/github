@@ -1,0 +1,11 @@
+Configurar Eslint
+
+#yarn add eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-ally eslint-plugin-react -D
+
+Configurar o eslint e editor
+
+Configurar o syuled componentes - usar para estilizar a app
+
+#yarn add styled-components
+
+#yarn add axios
