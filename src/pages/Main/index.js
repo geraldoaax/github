@@ -1,25 +1,28 @@
-import React, { Component } from "react";
-import api from "../../services/api";
+import React, { Component } from 'react';
+import api from '../../services/api';
 
-import logo from "../../assets/logo.png";
+import logo from '../../assets/logo.png';
 
-import { Container, Form } from "./styles";
-import CompareList from "../../components/CompareList";
+import { Container, Form } from './styles';
+import CompareList from '../../components/CompareList';
 
 export default class Main extends Component {
   state = {
-    repositoryInput: "",
-    repositories: []
+    repositoryInput: '',
+    repositories: [],
   };
 
-  handleAddRepository = async e => {
-    //não recarrega a pagina toda
+  handleAddRepository = async (e) => {
+    // não recarrega a pagina toda
     e.preventdefault();
 
     try {
+      // eslint-disable-next-line react/destructuring-assignment
       const response = await api.get(`repos/${this.state.repositoryInput}`);
+      // eslint-disable-next-line no-console
       console.log(response);
     } catch (err) {
+      // eslint-disable-next-line no-console
       console.log(err);
     }
   };
