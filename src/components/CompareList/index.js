@@ -7,14 +7,11 @@ const CompareList = ({ repositories }) => (
     {repositories.map(repository => (
       <Repository>
         <header>
-          <img
-            src={repository.owner.avatar_url}
-            alt={repository.owner.login}
-            alt="facebook"
-          />
+          <img src={repository.owner.avatar_url} alt={repository.owner.login} />
           <strong>{repository.name}</strong>
           <small>{repository.owner.name}</small>
         </header>
+
         <ul>
           <li>
             {repository.stargazers_count} <small>stars</small>

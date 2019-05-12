@@ -9,3 +9,8 @@ Configurar o syuled componentes - usar para estilizar a app
 #yarn add styled-components
 
 #yarn add axios
+
+
+
+import React, { Component } from "react";
+SyntaxError: Unexpected identifier

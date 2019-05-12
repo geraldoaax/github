@@ -12,12 +12,12 @@ export default class Main extends Component {
     repositories: []
   };
 
-  handleAddRepository = async (e) => {
+  handleAddRepository = async e => {
     //não recarrega a pagina toda
     e.preventdefault();
 
     try {
-      const response = await api.get(`/repos/${this.state.repositoryInput}`);
+      const response = await api.get(`repos/${this.state.repositoryInput}`);
       console.log(response);
     } catch (err) {
       console.log(err);
