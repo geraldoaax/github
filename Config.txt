@@ -14,3 +14,6 @@ Configurar o syuled componentes - usar para estilizar a app
 
 import React, { Component } from "react";
 SyntaxError: Unexpected identifier
+
+#instalar prop-types
+#yarn add prop-types
