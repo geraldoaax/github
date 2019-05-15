@@ -1,3 +1,4 @@
+/* eslint-disable react/destructuring-assignment */
 import React, { Component } from 'react';
 import api from '../../services/api';
 
@@ -14,7 +15,7 @@ export default class Main extends Component {
 
   handleAddRepository = async (e) => {
     // não recarrega a pagina toda
-    e.preventdefault();
+    e.preventDefault();
 
     try {
       // eslint-disable-next-line react/destructuring-assignment
