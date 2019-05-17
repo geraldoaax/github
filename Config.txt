@@ -10,10 +10,12 @@ Configurar o syuled componentes - usar para estilizar a app
 
 #yarn add axios
 
-
-
-import React, { Component } from "react";
-SyntaxError: Unexpected identifier
-
-#instalar prop-types
+instalar prop-types - tipagem
 #yarn add prop-types
+
+
+Arrumar as datas
+#yarn add moment
+
+alterar as fontes
+#yarn add font-awesome
